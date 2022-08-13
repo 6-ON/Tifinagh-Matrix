@@ -1,4 +1,4 @@
-const canvas = document.querySelector('canvas');
+const canvas = document.querySelector('canvas')
 const context = canvas.getContext('2d')
 
 canvas.width = window.innerWidth
@@ -32,7 +32,7 @@ class RainCode {
             context.fillText(this.previousChar, this.x, yPositions[this.Yindex - 1]) //redraw the previous char with green color
             this.previousChar = text
         }
-        this.Yindex = (this.Yindex > rows && Math.random() > 0.9) ? 0 : this.Yindex + 1; // randomize the regeneration posibility
+        this.Yindex = (this.Yindex > rows && Math.random() > 0.9) ? 0 : this.Yindex + 1 // randomize the regeneration posibility
     }
 }
 
@@ -54,4 +54,4 @@ const draw = () => {
 
 }
 
-setInterval(draw, 50);
+setInterval(draw, 50)
